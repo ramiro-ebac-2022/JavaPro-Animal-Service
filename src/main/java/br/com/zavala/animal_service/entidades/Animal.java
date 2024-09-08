@@ -33,7 +33,7 @@ public class Animal {
 	private Date dataEntrada;
 	
 	@Column
-	private Date dataAdoção;
+	private Date dataAdocao;
 	
 	@Column(nullable = false)
 	private String condicoesChegada;
@@ -80,11 +80,11 @@ public class Animal {
 	}
 
 	public Date getDataAdoção() {
-		return dataAdoção;
+		return dataAdocao;
 	}
 
 	public void setDataAdoção(Date dataAdoção) {
-		this.dataAdoção = dataAdoção;
+		this.dataAdocao = dataAdoção;
 	}
 
 	public String getCondicoesChegada() {

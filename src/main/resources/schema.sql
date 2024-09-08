@@ -1,4 +1,4 @@
-CREATE TABLE animal (
+CREATE TABLE IF NOT EXISTS animal (
   id INT AUTO_INCREMENT NOT NULL,
   nome_provisorio VARCHAR(255) NOT NULL,
   idade_estimada INT NOT NULL,
@@ -10,4 +10,4 @@ CREATE TABLE animal (
   data_obito date,
   porte VARCHAR(255) NOT NULL,
   CONSTRAINT pk_animal PRIMARY KEY (id)
-);
+); 

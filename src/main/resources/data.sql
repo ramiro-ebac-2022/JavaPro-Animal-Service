@@ -7,3 +7,9 @@ INSERT INTO
  animal (nome_provisorio, idade_estimada, raca, data_entrada, condicoes_chegada, nome_recebedor, porte)
 VALUES
  ('Outro Cachorrinho da Ebac', 5, 'Poodle', current_date, 'Com anemia', 'Sandra', 'Grande'); 
+ 
+INSERT INTO 
+ animal (nome_provisorio, idade_estimada, raca, data_entrada, condicoes_chegada, nome_recebedor, porte, data_adocao)
+VALUES
+ ('Totó', 1, 'Doberman', current_date, 'Forte', 'Giovanna', 'Pequeno', current_date); 
+ 
