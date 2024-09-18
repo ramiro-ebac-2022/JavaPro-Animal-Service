@@ -1,6 +1,5 @@
 package br.com.zavala.animal_service.controllers;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
@@ -8,7 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import br.com.zavala.animal_service.dto.EspecieRacaDTO;
+import br.com.zavala.animal_service.dto.RecebedorAnimalDTO;
 import br.com.zavala.animal_service.entidades.Animal;
+import br.com.zavala.animal_service.entidades.Especie;
 import br.com.zavala.animal_service.repositorios.AnimalRepository;
 
 @RestController
@@ -40,4 +43,20 @@ public class AnimalController {
 	private List<Animal> findAdopted() {
 		return repository.findAdopted();
 	}
+	
+	@GetMapping("/voluntario-animal")
+	private List<RecebedorAnimalDTO> listVolunteerAnimal() {
+		return repository.listVolunteerAnimal();
+	}
+	
+	@GetMapping("/especie")
+	private List<Especie> findEspecie() {
+		return repository.findEspecie();
+	}
+	
+	@GetMapping("/especie-raca")
+	private List<EspecieRacaDTO> listEspecieRaca() {
+		return repository.listEspecieRaca();
+	}
+	
 }

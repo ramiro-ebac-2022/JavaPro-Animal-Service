@@ -13,3 +13,14 @@ INSERT INTO
 VALUES
  ('Totó', 1, 'Doberman', current_date, 'Forte', 'Giovanna', 'Pequeno', current_date); 
  
+ INSERT INTO 
+ animal (nome_provisorio, idade_estimada, raca, data_entrada, condicoes_chegada, nome_recebedor, porte)
+VALUES
+ ('Outro Cachorrinho da Giovanna', 2, 'Chihuahua', current_date, 'Perfeitamente saudável', 'Giovanna', 'pequeno'); 
+ 
+ INSERT INTO especie (nome_especie) VALUES ('CACHORRO');
+ INSERT INTO especie (nome_especie) VALUES ('GATO');
+ 
+ INSERT INTO raca (id_especie, nome_raca, caracteristicas) VALUES (1, 'Poodle', 'Carinhoso');
+ INSERT INTO raca (id_especie, nome_raca, caracteristicas) VALUES (1, 'Doberman', 'Protetor');
+ INSERT INTO raca (id_especie, nome_raca) VALUES (2, 'SRD');
